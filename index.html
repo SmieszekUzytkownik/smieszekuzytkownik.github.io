@@ -8,20 +8,20 @@
   
     <body>
         <p id="p1">Cokolwiek</p>
-        <input id="input1" value="Wpisz tekst">
+        <input id="wow" value="Wpisz tekst">
         <button id="button1">OK</button>
         
     </body>
     <script>
         let p = window.document.getElementById("p1");
-        let input = window.document.getElementById("input1");
+        let input = window.document.getElementById("wow");
         let button = window.document.getElementById("button1");
         console.log("To ja")
         button.addEventListener('click', funkcja)
 
         function funkcja(event)
         {
-            // tutaj kod
+         p.innerHTML = input.value
         }
 
     </script>  
