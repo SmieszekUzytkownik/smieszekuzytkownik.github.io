@@ -1,20 +1,28 @@
 <!doctype html>
     <html>
     <head>
-    <title>Our Funky HTML Page</title>
+    <title>Nasza strona</title>
     <meta name="description" content="Our first page">
     <meta name="keywords" content="html tutorial template">
     </head>
+  
     <body>
-        <p id="inputId">Test input</p>
+        <p id="p1">Cokolwiek</p>
+        <input id="input1" value="Wpisz tekst">
+        <button id="button1">OK</button>
+        
     </body>
     <script>
-        let pElem = window.document.getElementById("inputId");
-        pElem.innerHTML = test ("jeden","dwa");
-        function test(x,y){
-            let rezultat = x + "<br>" + y 
-            return rezultat 
+        let p = window.document.getElementById("p1");
+        let input = window.document.getElementById("input1");
+        let button = window.document.getElementById("button1");
+        console.log("To ja")
+        button.addEventListener('click', funkcja)
+
+        function funkcja(event)
+        {
+            // tutaj kod
         }
 
-    </script>
+    </script>  
     </html>
